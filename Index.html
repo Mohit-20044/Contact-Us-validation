@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Craftify — Handmade With Love</title>
+<style>
+  body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f3f0;
+    color: #333;
+    overflow-x: hidden;
+  }
+
+  header {
+    background: linear-gradient(135deg, #ffb347, #ffcc33);
+    color: white;
+    padding: 1rem 2rem;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 3rem 2rem;
+    flex-wrap: wrap;
+  }
+
+  .hero-text {
+    max-width: 500px;
+    animation: fadeInUp 1s ease-out;
+  }
+
+  .hero-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+
+  .hero-text p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    color: #555;
+  }
+ .hero-text button {
+    background: #ff9f1c;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+  }
+
+  .hero-text button:hover {
+    background: #ff7f11;
+  }
+
+  .hero img {
+    max-width: 400px;
+    border-radius: 15px;
+    animation: float 3s ease-in-out infinite;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  }
+ @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+  }
+
+  @keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    padding: 2rem;
+  }
+.feature-card {
+    background: white;
+    border-radius: 15px;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .feature-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  }
+
+  .feature-card img {
+    width: 60px;
+    margin-bottom: 1rem;
+  }
+footer {
+    background: #ff9f1c;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+  }
+</style>
+</head>
+<body>
+    <header>
+  Craftify — Handmade With Love
+</header>
+
+<section class="hero">
+  <div class="hero-text">
+    <h1>Beautifully Handcrafted Pottery</h1>
+    <p>Each piece is made with care, skill, and a sprinkle of creativity. Perfect for gifting or adding a unique touch to your home.</p>
+    <button onclick="scrollToFeatures()">Explore Products</button>
+  </div>
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRh6WFreD3zpx7honUCfTR1brO-ESbUFRUbQ&s" alt="Craft Pottery">
+</section>
+
+
+
+    <section id="features" class="features">
+  <div class="feature-card">
+    <img src="https://cdn-icons-png.flaticon.com/512/1046/1046745.png" alt="Unique Design">
+    <h3>Unique Designs</h3>
+    <p>No two pieces are the same — each is a work of art.</p>
+  </div>
+  <div class="feature-card">
+    <img src="https://cdn-icons-png.flaticon.com/512/921/921490.png" alt="Eco Friendly">
+    <h3>Eco-Friendly</h3>
+    <p>Made with natural clay and sustainable practices.</p>
+  </div>
+    <div class="feature-card">
+    <img src="https://cdn-icons-png.flaticon.com/512/1256/1256650.png" alt="Durable">
+    <h3>Durable Quality</h3>
+    <p>Crafted to last for years without losing charm.</p>
+  </div>
+</section>
+
+<footer>
+  &copy; 2025 Craftify | All Rights Reserved
+</footer>
+   <script>
+function scrollToFeatures() {
+  document.getElementById("features").scrollIntoView({ behavior: "smooth" });
+}
+</script>
+
+<script>
+function scrollToFeatures() {
+  document.getElementById("features").scrollIntoView({ behavior: "smooth" });
+}
+</script>
+
+
+</body>
+</html>
